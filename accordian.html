@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accoridan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- for icons plus minus font awesome-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="accordian">
+      <div class="card draggable">
+        <div class="card-header">
+          <h3>Item</h3>
+          <span class="fa fa-plus"></span>
+        </div>
+        <div class="card-body active">
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+        </div>
+      </div>
+      <div class="card draggable">
+        <div class="card-header">
+          <h3>Item</h3>
+          <span class="fa fa-plus"></span>
+        </div>
+        <div class="card-body active">
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+        </div>
+      </div>
+      <div class="card draggable">
+        <div class="card-header">
+          <h3>Item</h3>
+          <span class="fa fa-plus"></span>
+        </div>
+        <div class="card-body active">
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+        </div>
+      </div>
+      <div class="card draggable">
+        <div class="card-header">
+          <h3>Item</h3>
+          <span class="fa fa-plus"></span>
+        </div>
+        <div class="card-body active">
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+          <p>This is Item</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- jqurey code -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".draggable").draggable();
+        $(".card-header").click(function () {
+          $(this).next(".card-body").slideToggle();
+          $(this).children("span").toggleClass("fa-minus", "fa-plus");
+        });
+      });
+    </script>
+  </body>
+</html>

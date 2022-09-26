@@ -1,0 +1,60 @@
+body {
+	margin: 20px;
+	font-family: sans-serif;
+}
+
+.accordian {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.accordian .card {
+	margin: 20px;
+	width: 100%;
+	/* height: auto; */
+}
+
+.accordian .card .card-header h3 {
+	cursor: pointer;
+	color: #ffffff;
+	position: relative;
+	background-color: #3343a2;
+	margin: 0;
+	padding: 15px 20px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.accordian .card .card-header {
+	position: relative;
+}
+
+.accordian .card .card-header span {
+	position: absolute;
+	right: 20px;
+	top: 12px;
+	height: 25px;
+	width: 25px;
+	color: #3343a2;
+	background-color: #ffffff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 25px;
+	font-size: 13px;
+}
+
+.accordian .card .card-body {
+
+	padding: 20px;
+	background-color: rgb(167, 204, 230);
+	display: none;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.accordian .card .card-body p {
+	font-size: 15px;
+	line-height: 24px;
+	color: #444444;
+	margin: 0px;
+}
